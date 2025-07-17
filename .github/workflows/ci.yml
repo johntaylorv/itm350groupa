@@ -27,8 +27,9 @@ jobs:
 
       - name: Run tests
         run: |
-          . venv/bin/activate
-          pytest
+    . venv/bin/activate
+    export PYTHONPATH=src
+    pytest
 
       - name: Build Docker image
         run: docker build -t johntaylorv/planet .
