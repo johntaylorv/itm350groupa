@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_security_group" "allow_ssh_http" {
-  name        = "allow_ssh_http"
+  name        = "allow_ssh_http-itm350grpa"
   description = "Allow SSH and HTTP inbound traffic"
 
   ingress {
