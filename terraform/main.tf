@@ -29,7 +29,7 @@ resource "aws_security_group" "allow_ssh_http" {
 }
 
 resource "aws_instance" "app_server" {
-  ami = "ami-0e731c8a588258d0d" # Amazon Linux 2, us-west-2
+  ami = "ami-05dc67d613ea82750" # Amazon Linux 2, us-west-2
 
   instance_type = "t2.micro"
 
